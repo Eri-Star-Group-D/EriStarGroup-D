@@ -1,7 +1,14 @@
 
+body{
+    
 
+ 
+  font-family: "Inter", sans-serif;
+ 
+
+}
 header{
-    height: 20vh;
+    height: 15vh;
 }
 
 .logo{
@@ -12,24 +19,51 @@ header{
     display: flex;
     justify-content:space-between;
 }
-.link{
+.links{
     display: flex;
     justify-content:space-between;
 }
 main{
     height: 60vh;
 }
+footer{
+    background-color:#C4CEDA;
+    
+    
+
+}
 .footer{
+   
     display: flex ;  
-    justify-content:space-between;
-    height: 20vh;
-    background-color: cadetblue;
+    justify-content:space-around;
+    height: 15vh;
+   
+    
 }
 img{
     display: inline;
+    background: transparent;
+   
 }
 
 .ulfooter{
     display: flex;
     justify-content:space-between;
+   
+}
+.icons{
+    display: flex;
+    justify-content:space-around;
+}
+#icons{
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+}
+ul{
+    list-style:none;
+}
+.firstli{
+    font-size: large;
+    
 }
