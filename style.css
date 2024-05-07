@@ -47,7 +47,7 @@ header{
   height: 30px;
 
 }
-main{
+#indexm{
     height: 900px;
     display: flex;
     flex-direction: column;
