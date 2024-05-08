@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <title>Search Page</title>
+
+    <style>
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.search-title{
+
+    text-align: center;
+    margin-top: 200px;
+}
+.search-bar{
+    display: flex;
+    padding: 10px;
+    width: 80vw;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 15px rgb(161, 159, 159);
+    justify-content: space-around;
+    justify-self: center;
+    text-align: center;
+
+}
+
+.btn{
+    
+    align-content: center; 
+
+}
+
+.search-results-title{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    justify-content: center;
+    
+
+}
+
+.card {
+
+    width: 250px;
+    overflow: hidden;
+    background-color: rgba(239, 238, 237, 0.942);
+    margin: 10px;
+    box-shadow: 0 0 25% black;
+    border-radius: 2%;
+    padding: 2px;
+    border: 1.3px solid black;
+    box-shadow: 0 0 25px rgb(161, 159, 159);
+    
+}
+
+.card img{
+    width: 100%;
+    border-radius: 2%;
+    height: auto;
+}
+
+.card-content{
+            padding: 15px;
+            text-align: center;
+
+        }
+
+.card-content a{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 80px;
+            padding-right: 80px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: large;
+            border: 1px solid black;
+            border-radius: 5%;
+            background-color: rgb(243, 246, 248);
+
+            
+            
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+
+        <div class="search-title">
+        <h3>Search</h3>
+    </div>
+        
+    <div class="search-bar">
+        <div class="name">
+            <label for="">Artist Name</label>
+            <input type="text" placeholder="Enter Name">
+        </div>
+
+        <div class="status">
+            <label for="">Status</label>
+            <select name="" id="">
+                <option value="">Current</option>
+                <option value="">Retired</option>
+            </select>
+            
+        </div>
+
+        <div class="type">
+            <label for="">Genre</label>
+            <select name="" id="">
+                <option value="">Guayla</option>
+                <option value="">Classics</option>
+                <option value="">Raggae</option>
+                <option value="">Tradditional</option>
+                <option value="">Old School</option>
+                <option value="">All</option>
+            </select>
+        </div>
+        <div class="btn">
+            
+            <button type="submit">Search</button>
+            
+        </div>
+    </div>
+
+<div class="search-results-title">
+    <h3>Search Results</h3>
+</div>
+
+    <div class="card-container">
+
+
+        <div class="card">
+            <img src="image/Abraham Afewerki.jpeg" alt="">
+            <div class="card-content">
+                <h4>Abraham Afewerki</h4><br>
+                <a href="">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/elsa-kidane.jpeg" alt="">
+            <div class="card-content">
+                <h4>Elsa Kidane</h4><br>
+                <a href="">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/wedi-tukul.jpeg" alt="">
+            <div class="card-content">
+                <h4>Tekle Kiflemariam <br> (Wedi Tikul)</h4>
+                <a href="">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/abrar-osman.jpeg" alt="">
+            <div class="card-content">
+                <h4>Abrar Osman</h4><br>
+                <a href="">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/Faytinga.jpeg" alt="">
+            <div class="card-content">
+                <h4>Dahab faytinga</h4><br>
+                <a href="">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/Yohannes-Tikabo.jpeg" alt="">
+            <div class="card-content">
+                <h4>Yahannes Tiquabo <br> (Wedi Tikabo)</h4>
+                <a href="">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/yemane-barya.jpeg" alt="">
+            <div class="card-content">
+                <h4>Yemane G/Michael <br> (Barya)</h4>
+                <a href="">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/helen-meles.jpeg" alt="">
+            <div class="card-content">
+                <h4>Helen Meles</h4><br>
+                <a href="">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/tewelde-reda.jpeg" alt="">
+            <div class="card-content">
+                <h4>Tewolde Redda</h4><br>
+                <a href="">View</a>
+
+            </div>
+        </div>
+    </div>
+    
+<footer>
+
+</footer>
+</body>
+</html>
