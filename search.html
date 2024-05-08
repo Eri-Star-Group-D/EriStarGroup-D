@@ -7,7 +7,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
 
-    <title>Search Page</title>
+<link rel="stylesheet" href="style.css" />
+
+<title>Eristars Search-Page</title>
 
     <style>
 *{
@@ -19,7 +21,7 @@
 .search-title{
 
     text-align: center;
-    margin-top: 200px;
+    margin-top: 80px;
 }
 .search-bar{
     display: flex;
@@ -27,9 +29,10 @@
     width: 80vw;
     height: auto;
     margin-top: 20px;
+    margin-left: 100px;
     border: 1px solid black;
     box-shadow: 0 0 15px rgb(161, 159, 159);
-    justify-content: space-around;
+    justify-content:space-evenly;
     justify-self: center;
     text-align: center;
 
@@ -39,7 +42,9 @@
     
     align-content: center; 
 
+
 }
+
 
 .search-results-title{
     text-align: center;
@@ -104,6 +109,17 @@
 </head>
 <body>
     <header>
+        
+            <div class="header-container">
+              <img class="logo" src="media/images/logo.jpg" alt="EriStars-logo" />
+              <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <button id="Login-btn">Login</button>
+            </div>
 
     </header>
 
@@ -139,7 +155,7 @@
         </div>
         <div class="btn">
             
-            <button type="submit">Search</button>
+            <button type="submit" class="button button-outline">Search</button>
             
         </div>
     </div>
