@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> --> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"> -->
+ 
 <link rel="stylesheet" href="style.css" />
 
 <title>Eristars Search-Page</title>
@@ -16,10 +21,13 @@
     margin: 0px;
     border: 0px;
     box-sizing: border-box;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
-.search-title{
 
+.search-title{
+    
     text-align: center;
     margin-top: 80px;
 }
@@ -78,26 +86,31 @@
 }
 
 .card-content{
-            padding: 15px;
+            padding: 5px;
             text-align: center;
-
         }
 
 .card-content a{
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 80px;
-            padding-right: 80px;
+            padding: 7px 80px 7px ;
             text-decoration: none;
             font-weight: 400;
             font-size: large;
             border: 1px solid black;
-            border-radius: 5%;
+            border-radius: 3%;
             background-color: rgb(243, 246, 248);
+ 
+        }
 
-            
-            
-            
+        .button-outline{
+        border: 1px solid black;
+        border-radius: 30px;
+        padding: 6px 80px 6px;
+        margin-bottom: 50px;
+        background-color: #F9F9F9;
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+
         }
 
 
@@ -132,26 +145,28 @@
         <div class="status">
             <label for="">Status</label>
             <select name="" id="">
-                <option value="">Current</option>
+                <option value="">All</option>
+                <option value="" href="">Current</option>
                 <option value="">Retired</option>
             </select>
             
         </div>
 
         <div class="type">
-            <label for="">Genre</label>
+            <label for="">Type</label>
             <select name="" id="">
-                <option value="">Guayla</option>
-                <option value="">Classics</option>
-                <option value="">Raggae</option>
-                <option value="">Tradditional</option>
-                <option value="">Old School</option>
                 <option value="">All</option>
+                <option value="">Singer</option>
+                <option value="">Musician</option>
+                <option value="">Actor/Actress</option>
+                <option value="">Author</option>
+                <option value="">Poet</option>
+                <option value="">Painter</option>
             </select>
         </div>
         <div class="btn">
             
-            <button type="submit" class="button button-outline">Search</button>
+            <button type="submit" >Search</button>
             
         </div>
     </div>
@@ -167,25 +182,44 @@
             <img src="image/Abraham Afewerki.jpeg" alt="">
             <div class="card-content">
                 <h4>Abraham Afewerki</h4><br>
-                <a href="">View</a>
+                <a href="https://en.wikipedia.org/wiki/Abraham_Afewerki" target="_blank">View</a>
 
             </div>
         </div>
 
         <div class="card">
-            <img src="image/elsa-kidane.jpeg" alt="">
+            <img src="image/Ato-Beyene-Hayle .jpeg" alt="">
             <div class="card-content">
-                <h4>Elsa Kidane</h4><br>
-                <a href="">View</a>
+                <h4>Ato Beyene Hayle</h4><br>
+                <a href="http://www.beyanhaile.com/about.html" target="_blank">View</a>
 
             </div>
         </div>
 
+        <div class="card">
+            <img src="image/helen-meles.jpeg" alt="">
+            <div class="card-content">
+                <h4>Helen Meles</h4><br>
+                <a href="https://en.wikipedia.org/wiki/Helen_Meles">View</a>
+
+            </div>
+        </div>
+
+       
         <div class="card">
             <img src="image/wedi-tukul.jpeg" alt="">
             <div class="card-content">
                 <h4>Tekle Kiflemariam <br> (Wedi Tikul)</h4>
-                <a href="">View</a>
+                <a href="http://www.madote.com/2017/02/interview-with-wedi-tikul.html" target="_blank">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/Dr-reesom-haile.png" alt="">
+            <div class="card-content">
+                <h4>Dr Reesom Haile</h4><br>
+                <a href="https://brittlepaper.com/2021/12/re-introducing-reesom-haile/" target="_blank">View</a>
 
             </div>
         </div>
@@ -194,7 +228,7 @@
             <img src="image/abrar-osman.jpeg" alt="">
             <div class="card-content">
                 <h4>Abrar Osman</h4><br>
-                <a href="">View</a>
+                <a href="https://peneritrea.com/blog/abrar-osman-has-been-named-the-winner-of-pen-eritreas-freedom-of-expression-award-2022" target="_blank">View</a>
 
             </div>
         </div>
@@ -203,7 +237,16 @@
             <img src="image/Faytinga.jpeg" alt="">
             <div class="card-content">
                 <h4>Dahab faytinga</h4><br>
-                <a href="">View</a>
+                <a href="https://en.wikipedia.org/wiki/Dehab_Faytinga" target="_blank">View</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/Michael-Adonai.jpeg" alt="">
+            <div class="card-content">
+                <h4>Painter Michael Adonay</h4><br>
+                <a href="https://footscrayarts.com/profile/michael-adonai/" target="_blank">View</a>
 
             </div>
         </div>
@@ -221,19 +264,12 @@
             <img src="image/yemane-barya.jpeg" alt="">
             <div class="card-content">
                 <h4>Yemane G/Michael <br> (Barya)</h4>
-                <a href="">View</a>
+                <a href="https://en.wikipedia.org/wiki/Yemane_Ghebremichael" target="_blank">View</a>
 
             </div>
         </div>
 
-        <div class="card">
-            <img src="image/helen-meles.jpeg" alt="">
-            <div class="card-content">
-                <h4>Helen Meles</h4><br>
-                <a href="">View</a>
-
-            </div>
-        </div>
+        
 
         <div class="card">
             <img src="image/tewelde-reda.jpeg" alt="">
@@ -243,6 +279,16 @@
 
             </div>
         </div>
+
+        <div class="card">
+            <img src="image/elsa-kidane.jpeg" alt="">
+            <div class="card-content">
+                <h4>Elsa Kidane</h4><br>
+                <button class="button-outline">view</button>
+
+            </div>
+        </div>
+
     </div>
     
 <footer>
