@@ -3,9 +3,7 @@ body{
     
 
  
-  font-family: "Inter", sans-serif;
-  margin: 0px;
- 
+
 
 }
 header{
@@ -66,6 +64,8 @@ header{
 }
 h4{
     text-align: center;
+    font-size: 20px;
+    font-weight: 500;
 
 }
 .index-para{
@@ -78,21 +78,41 @@ h4{
     justify-content: space-around;
     height: 100px;
     font-size: medium;
+   
     
 }
 .body-btn{
     border: none;
-    width: 150px;
+    width: 180px;
+    height: 180px;
     margin-top: -30px;
     background-color: #F9F9F9;
+    box-shadow: 0 0 25px rgb(173, 172, 172);
+    border-radius: 8px;
+}
+
+
+
+.body-btn p{
+    font-size: 20px;
+    font-weight: 550;
+    color: rgb(61, 59, 59);
 }
 
 .num-viewers{
-    font-size: large;
-    color: red;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(200, 2, 2,0.5);
+}
+.body-btn:hover{
+    background-color: rgb(207, 206, 206);
+   .num-viewers{
+       color:rgb(200, 2, 2);
+    }
 }
 .index-hd{
     margin-top: 40px;
+    
 }
 #Popular{
     display: flex;
@@ -118,11 +138,14 @@ img{
 
 }
 .viewbtn{
-    border: 1px solid black;
+   border: 1px solid black;
    border-radius: 30px;
- padding: 6px 80px;
-  margin-bottom: 50px;
-  background-color: #F9F9F9;
+   padding: 6px 70px 6px;
+   margin-bottom: 50px;
+   background-color: #F9F9F9;
+  
+
+   
 }
 #shamot{
     height: 220px;
@@ -154,10 +177,7 @@ footer{
 
 
 }
-.flg{
-    height: 130px;
-    width: 230px;
-    margin-top: 10px;
+
    
 }
 
