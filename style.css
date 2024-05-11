@@ -1,10 +1,6 @@
 
 body{
     
-
- 
-
-
 }
 header{
   background-image: url(media/images/camels.jpg);
@@ -12,7 +8,6 @@ header{
     background-size: cover;
     height: 380px;
     
-
 
 }
 .header-container{
@@ -176,9 +171,6 @@ footer{
     background-color:#C4CEDA;
 
 
-}
-
-   
 }
 
 .footer{
