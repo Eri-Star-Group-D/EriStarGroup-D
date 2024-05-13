@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"> 
- 
+   
    <script>
       src="https://kit.fontawesome.com/053a8ea545.js"
       crossorigin="anonymous"
@@ -68,11 +68,17 @@
     margin-top: 20px;
     margin-bottom: 200px;
     justify-content: center;
+  
 }
 
 .card {
-
+    
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 6px;
     width: 250px;
+    height: 350px;
     overflow: hidden;
     background-color: rgba(239, 238, 237, 0.942);
     margin: 10px;
@@ -90,19 +96,20 @@
     height: auto;
 }
 
-.card-content{
-            padding: 5px;
-            text-align: center;
-        }
 
-.card-content a{
-            padding: 7px 80px 7px ;
+.card a{ 
+            
+            padding: 7px 85px 7px ;
             text-decoration: none;
             font-weight: 400;
             font-size: large;
             border: 1px solid black;
-            border-radius: 3%;
-            background-color: rgb(243, 246, 248);
+            border-radius: 25px;
+            background-color: rgb(243, 246, 248); 
+          
+             
+           
+            
  
         }
 
@@ -182,50 +189,52 @@
 
     <div class="card-container">
 
+       
+        <div class="card">
+            <div><img src="media/images/Abraham Afewerki.jpeg" alt="">
+            </div>
+                <div><h4>Abraham Afewerki</h4>
+                </div>
+                <div><a href="https://en.wikipedia.org/wiki/Abraham_Afewerki" target="_blank">View</a>
+                </div>    
+        </div>
+        
 
         <div class="card">
-            <img src="media/images/Abraham Afewerki.jpeg" alt="">
-            <div class="card-content">
-                <h4>Abraham Afewerki</h4><br>
-                <a href="https://en.wikipedia.org/wiki/Abraham_Afewerki" target="_blank">View</a>
-
+            <div><img src="media/images/Ato-Beyene-Hayle .jpeg" alt="">
             </div>
+            <div><h4>Ato Beyene Hayle</h4>
+            </div>
+            <div><a href="http://www.beyanhaile.com/about.html" target="_blank">View</a>
+            </div> 
         </div>
 
         <div class="card">
-            <img src="media/images/Ato-Beyene-Hayle .jpeg" alt="">
-            <div class="card-content">
-                <h4>Ato Beyene Hayle</h4><br>
-                <a href="http://www.beyanhaile.com/about.html" target="_blank">View</a>
-
+            <div><img src="media/images/helen-meles.jpeg" alt="">
             </div>
-        </div>
-
-        <div class="card">
-            <img src="media/images/helen-meles.jpeg" alt="">
-            <div class="card-content">
-                <h4>Helen Meles</h4>
-                <a href="https://en.wikipedia.org/wiki/Helen_Meles" target="_blank">View</a>
-
-            </div>
+            <div><h4>Helen Meles</h4>
+            </div> 
+            <div><a href="https://en.wikipedia.org/wiki/Helen_Meles" target="_blank">View</a>
+            </div>  
         </div>
 
        
         <div class="card">
-            <img src="media/images/wedi-tukul.jpeg" alt="">
-            <div class="card-content">
-                <h4>Tekle Kiflemariam <br> (Wedi Tikul)</h4>
-                <a href="http://www.madote.com/2017/02/interview-with-wedi-tikul.html" target="_blank">View</a>
-
+           <div><img src="media/images/wedi-tukul.jpeg" alt="">
+           </div>
+           <div><h4>Tekle Kiflemariam <br> (Wedi Tikul)</h4>
+           </div>
+            <div><a href="http://www.madote.com/2017/02/interview-with-wedi-tikul.html" target="_blank">View</a>
             </div>
+           
         </div>
 
         <div class="card">
-            <img src="media/images/Dr-reesom-haile.png" alt="">
-            <div class="card-content">
-                <h4>Dr Reesom Haile</h4><br>
-                <a href="https://brittlepaper.com/2021/12/re-introducing-reesom-haile/" target="_blank">View</a>
-
+            <div><img src="media/images/Dr-reesom-haile.png" alt="">
+            </div>
+            <div><h4>Dr Reesom Haile</h4>
+            </div>
+            <div><a href="https://brittlepaper.com/2021/12/re-introducing-reesom-haile/" target="_blank">View</a>
             </div>
         </div>
 
