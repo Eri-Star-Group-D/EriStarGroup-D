@@ -188,9 +188,9 @@ footer{
 .footer{
    
     display: flex ;  
+    flex-wrap: wrap;
     justify-content:space-around;
     height: 150px; 
-    flex-wrap: wrap;
     align-items: center;
 
 }
@@ -216,8 +216,10 @@ ul{
 }
 li{
     margin: 10px 5px;
+    list-style: none;
 }
 .firstli{
     font-size: 20px;
+    list-style: none;
     
 }

@@ -113,6 +113,7 @@
     padding: 2px;
     border: 1.3px solid black;
     box-shadow: 0 0 25px rgb(161, 159, 159);
+    transition: transform 0.4s;
     
 }
 
@@ -134,6 +135,10 @@
             background-color: rgb(243, 246, 248); 
             color: rgb(109, 107, 107); 
           
+        }
+
+        .card:hover{
+            transform: scale(1.05);
         }
 
         .card a:hover{
@@ -347,6 +352,7 @@
 <footer>
 
         <div class="footer">
+
           <div class="footerlg">
             <img src="media/images/ProjectFinalLogo.png" alt="EriStars-logo" />
           </div>
@@ -367,11 +373,12 @@
               <li>Our Address</li>
             </ul>
           </div>
-        </div>
+          </div>
+       
   
         <div class="icons">
-          <p>All Rights Reserved. &copy; Eri Stars 2024</p>
-          
+          <div><p>All Rights Reserved. &copy; Eri Stars 2024</p>
+          </div>
           <div id="icons">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -379,6 +386,7 @@
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
         </div>
+
 
 
 </footer>
