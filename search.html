@@ -11,11 +11,7 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"> 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"> 
-  
-   <script>
-      src="https://kit.fontawesome.com/053a8ea545.js"
-      crossorigin="anonymous"
-    </script>
+
 
    <link rel="stylesheet" href="style.css" />
 
@@ -30,13 +26,30 @@
     
 }
 
+#Login-btn{
+    border: 1px solid black;
+   border-radius: 25px;
+   padding: 1px 40px 5px;
+  height: 40px;
+  background-color: rgb(248, 248, 247);
+  color: rgb(87, 85, 85);
+  font-size: 12px;
+}
+
+#Login-btn:hover{
+    color: rgb(248, 248, 247);
+    background-color: rgb(87, 85, 85) ;
+}
+
 
 
 .search-title{
     
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
+   
 }
+
 .search-bar{
     display: flex;
     padding: 10px;
@@ -45,17 +58,27 @@
     margin-top: 20px;
     margin-left: 100px;
     border: 1px solid black;
-    box-shadow: 0 0 15px rgb(161, 159, 159);
+    box-shadow: 0 0 10px rgb(161, 159, 159);
     justify-content:space-evenly;
     justify-self: center;
     text-align: center;
 
 }
 
-.btn{
+.search-btn button{
     
-    align-content: center; 
+    justify-content: center; 
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: rgb(248, 248, 247);
+    color: rgb(87, 85, 85);
+    font-size: 12px;
 
+}
+
+.search-btn button:hover{
+    color: rgb(248, 248, 247);
+    background-color: rgb(87, 85, 85) ;
 }
 
 .search-results-title{
@@ -69,11 +92,17 @@
     margin-top: 20px;
     margin-bottom: 200px;
     justify-content: center;
+  
 }
 
 .card {
-
+    
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   gap: 5px;
     width: 250px;
+    height: 350px;
     overflow: hidden;
     background-color: rgba(239, 238, 237, 0.942);
     margin: 10px;
@@ -82,6 +111,7 @@
     padding: 2px;
     border: 1.3px solid black;
     box-shadow: 0 0 25px rgb(161, 159, 159);
+    transition: transform 0.4s;
     
 }
 
@@ -91,32 +121,28 @@
     height: auto;
 }
 
-.card-content{
-            padding: 5px;
-            text-align: center;
-        }
 
-.card-content a{
-            padding: 7px 80px 7px ;
+.card a{ 
+            
+            padding: 7px 85px 7px ;
             text-decoration: none;
-            font-weight: 400;
+            font-weight: 500;
             font-size: large;
             border: 1px solid black;
-            border-radius: 3%;
-            background-color: rgb(243, 246, 248);
- 
+            border-radius: 25px;
+            background-color: rgb(243, 246, 248); 
+            color: rgb(109, 107, 107); 
+          
         }
 
-        .button-outline{
-        border: 1px solid black;
-        border-radius: 30px;
-        padding: 6px 80px 6px;
-        margin-bottom: 50px;
-        background-color: #F9F9F9;
-        color: black;
-        font-size: 16px;
-        font-weight: 400;
+        .card:hover{
+            transform: scale(1.05);
+        }
 
+        .card a:hover{
+            background-color:#80878f;
+            box-shadow: 0 0 5px rgb(77, 77, 77);
+            color: rgb(246, 245, 244);
         }
         .footerlg img{
      width: 50%;
@@ -131,6 +157,8 @@
     margin-top: 10px;
         }
 
+
+       
 
 
     </style>
@@ -183,7 +211,7 @@
                 <option value="">Painter</option>
             </select>
         </div>
-        <div class="btn">
+        <div class="search-btn">
             
             <button type="submit" >Search</button>
             
@@ -196,115 +224,157 @@
 
     <div class="card-container">
 
-
+       
         <div class="card">
-            <img src="media/images/Abraham Afewerki.jpeg" alt="">
-            <div class="card-content">
-                <h4>Abraham Afewerki</h4><br>
+            <div>
+                <img src="media/images/Abraham Afewerki.jpeg" alt="">
+            </div>
+            <div>
+                    <h4>Abraham Afewerki</h4>
+            </div>
+            <div>
                 <a href="https://en.wikipedia.org/wiki/Abraham_Afewerki" target="_blank">View</a>
+            </div>    
+        </div>
+        
 
+        <div class="card">
+            <div><img src="media/images/Ato-Beyene-Hayle .jpeg" alt="">
             </div>
+            <div><h4>Ato Beyene Hayle</h4>
+            </div>
+            <div><a href="http://www.beyanhaile.com/about.html" target="_blank">View</a>
+            </div> 
         </div>
 
         <div class="card">
-            <img src="media/images/Ato-Beyene-Hayle .jpeg" alt="">
-            <div class="card-content">
-                <h4>Ato Beyene Hayle</h4><br>
-                <a href="http://www.beyanhaile.com/about.html" target="_blank">View</a>
-
+            <div><img src="media/images/bereket-mengisteab.jpeg" alt="">
             </div>
+            <div><h4>Bereket Mengisteab</h4>
+            </div> 
+            <div><a href="https://en.wikipedia.org/wiki/Bereket_Mengisteab" target="_blank">View</a>
+            </div>  
         </div>
 
         <div class="card">
-            <img src="media/images/helen-meles.jpeg" alt="">
-            <div class="card-content">
-                <h4>Helen Meles</h4>
-                <a href="https://en.wikipedia.org/wiki/Helen_Meles" target="_blank">View</a>
+            <div><img src="media/images/helen-meles.jpeg" alt="">
+            </div>
+            <div><h4>Helen Meles</h4>
+            </div> 
+            <div><a href="https://en.wikipedia.org/wiki/Helen_Meles" target="_blank">View</a>
+            </div>  
+        </div>
 
+        <div class="card">
+            <div><img src="media/images/yemane-barya.jpeg" alt="">
+                </div>
+            <div>
+                <h4>Yemane G/Michael (Barya)</h4>
+                </div>
+                <div>
+                    <a href="https://en.wikipedia.org/wiki/Yemane_Ghebremichael" target="_blank">View</a>
             </div>
         </div>
 
        
         <div class="card">
-            <img src="media/images/wedi-tukul.jpeg" alt="">
-            <div class="card-content">
-                <h4>Tekle Kiflemariam <br> (Wedi Tikul)</h4>
-                <a href="http://www.madote.com/2017/02/interview-with-wedi-tikul.html" target="_blank">View</a>
+           <div><img src="media/images/wedi-tukul.jpeg" alt="">
+           </div>
+           <div><h4>Tekle K/mariam (Wedi Tikul)</h4>
+           </div>
+            <div><a href="http://www.madote.com/2017/02/interview-with-wedi-tikul.html" target="_blank">View</a>
+            </div>
+           
+        </div>
 
+        <div class="card">
+            <div><img src="media/images/Dr-reesom-haile.png" alt="">
+            </div>
+            <div><h4>Dr Reesom Haile</h4>
+            </div>
+            <div><a href="https://brittlepaper.com/2021/12/re-introducing-reesom-haile/" target="_blank">View</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="media/images/Dr-reesom-haile.png" alt="">
-            <div class="card-content">
-                <h4>Dr Reesom Haile</h4><br>
-                <a href="https://brittlepaper.com/2021/12/re-introducing-reesom-haile/" target="_blank">View</a>
-
+            <div>
+                <img src="media/images/abrar-osman.jpeg" alt="">
             </div>
-        </div>
-
-        <div class="card">
-            <img src="media/images/abrar-osman.jpeg" alt="">
-            <div class="card-content">
-                <h4>Abrar Osman</h4><br>
+            <div>
+                    <h4>Abrar Osman</h4>
+            </div>
+            <div>
                 <a href="https://peneritrea.com/blog/abrar-osman-has-been-named-the-winner-of-pen-eritreas-freedom-of-expression-award-2022" target="_blank">View</a>
-
-            </div>
+            </div>    
         </div>
 
+
         <div class="card">
-            <img src="media/images/Faytinga.jpeg" alt="">
-            <div class="card-content">
+
+            <div><img src="media/images/Faytinga.jpeg" alt="">
+            </div>
+            <div>
                 <h4>Dahab faytinga</h4>
+            </div>
+            <div>
                 <a href="https://en.wikipedia.org/wiki/Dehab_Faytinga" target="_blank">View</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div><img src="media/images/Michael-Adonai.jpeg" alt="">
+                </div>
+            <div>
+                <h4>Painter Michael Adonai</h4>
+            </div>
+            <div><a href="https://footscrayarts.com/profile/michael-adonai/" target="_blank">View</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div><img src="media/images/Yohannes-Tikabo.jpeg" alt="">
+                </div>
+            <div>
+                <h4>Yohannes Tiquabo (Wedi Tikabo)</h4>
+                </div>
+                <div>
+                    <a href="https://haddaseritrea.com/the-musical-journey-of-yohannes-tikabo-wedi-tkabo-a-voice-for-eritreas-struggle-for-freedom/" target="_blank">View</a>
 
             </div>
         </div>
 
         <div class="card">
-            <img src="media/images/Michael-Adonai.jpeg" alt="">
-            <div class="card-content">
-                <h4>Painter Michael Adonay</h4><br>
-                <a href="https://footscrayarts.com/profile/michael-adonai/" target="_blank">View</a>
+            <div><img src="media/images/memhir-musa-aron.jpeg" alt="">
+                </div>
+            <div>
+                <h4>Memhr Musa Aron</h4>
+                </div>
+                <div>
+                    <a href="http://www.ehrea.org/musaa.php" target="_blank">View</a>
 
             </div>
         </div>
 
-        <div class="card">
-            <img src="media/images/Yohannes-Tikabo.jpeg" alt="">
-            <div class="card-content">
-                <h4>Yahannes Tiquabo <br> (Wedi Tikabo)</h4>
-                <a href="https://haddaseritrea.com/the-musical-journey-of-yohannes-tikabo-wedi-tkabo-a-voice-for-eritreas-struggle-for-freedom/" target="_blank">View</a>
 
+        <div class="card">
+            <div><img src="media/images/tewelde-reda.jpeg" alt="">
             </div>
-        </div>
-
-        <div class="card">
-            <img src="media/images/yemane-barya.jpeg" alt="">
-            <div class="card-content">
-                <h4>Yemane G/Michael <br> (Barya)</h4>
-                <a href="https://en.wikipedia.org/wiki/Yemane_Ghebremichael" target="_blank">View</a>
-
+            <div>
+                <h4>Tewolde Redda</h4>
             </div>
-        </div>
-
-        
-
-        <div class="card">
-            <img src="media/images/tewelde-reda.jpeg" alt="">
-            <div class="card-content">
-                <h4>Tewolde Redda</h4><br>
+            <div>
                 <a href="https://www.angry-mom-records.com/tewolde-redda" target="_blank\">View</a>
-
             </div>
         </div>
 
         <div class="card">
-            <img src="media/images/elsa-kidane.jpeg" alt="">
-            <div class="card-content">
-                <h4>Elsa Kidane</h4><br>
-                <button class="button-outline">view</button>
-
+            <div><img src="media/images/elsa-kidane.jpeg" alt="">
+                </div>
+            <div>
+                <h4>Elsa Kidane</h4>
+            </div>  
+            <div>
+                <a href="#">view</a>
             </div>
         </div>
 
@@ -315,6 +385,7 @@
 <footer>
 
         <div class="footer">
+
           <div class="footerlg">
             <img src="media/images/ProjectFinalLogo.png" alt="EriStars-logo" />
           </div>
@@ -335,18 +406,20 @@
               <li>Our Address</li>
             </ul>
           </div>
-        </div>
+          </div>
+       
   
         <div class="icons">
-          <p>All Rights Reserved. &copy; Eri Stars 2024</p>
+          <div><p>All Rights Reserved. &copy; Eri Stars 2024</p>
+          </div>
           <div id="icons">
-    
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
         </div>
+
 
 
 </footer>
