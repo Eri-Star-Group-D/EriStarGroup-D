@@ -24,71 +24,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
-    /> -->
+ 
     <title>Contact</title>
-    <style>
-      .container {
-          display: flex;
-          height: 300px;
-          width: 700px;
-          border: 1px solid black;
-      margin:50px 30px 70px 40px ;
-      }
-      .contact-info {
-           background-color:skyblue;
-           height: 300px;
-          width : 200px;
-
-          
-          
-      }
-
-      .form-fields
-      #form {
-         
-display: flex ;
-      }
-
-      .form-fields input,
-      .form-fields textarea {
-
-                  border: none;
-          border-bottom: 1px solid black;
-
-      }
-
-      .form-fields input[type="submit"] {
-          
-          width: auto;
-      }
-
-      .contact-info p {
-          margin: 5px;
-         
-          
-      }
-
-      .contact-info .icon {
-
-          padding: 20px;
-      }
-      .Fname {
-          margin: 30px;
-      }
-      .Lname{
-          margin: 30px;
-      }
-      .mess{
-          border: none;
-          border-bottom: 2px solid black;
-          margin: 30px;
-      }
-      .send-message {
-          float: right;
-  </style>
+    
 </head>
     <header>
       <div class="header-container fixed-top container-flud">
@@ -110,38 +48,40 @@ display: flex ;
      </div>
        </div>
      </div>
+     <div class="row">
+      <img class="col=12" src="media/images/camels.jpg" alt="" />
+    </div>
    </header>
-   <div class="row">
-     <img class="col=12" src="media/images/camels.jpg" alt="" />
-   </div>
     <main>
       <body>
-      
-          
+       <div class="text-center ">
           <h4>How to reach us</h4>
+        </div>
+        <div class="mb-lg-5">
            <p>
             Hello everyone! Thank you for trying to contact us & we appreciate it. If you have any question or suggestion which grows us, you are welcome & we will try to respond on a right time orr as much as we can. In order to contact us, you have a telephone number, email address & our loctaion down on this page. 
             Thank you for your reaction.
            </p>
-           
+          </div>
           <div class="container">
-              <div class="contact-info">
-                  <h3>Contact Information</h3>
+            <div class="row justify-content-between mb-lg-3">
+              <div class="contact-info col-10 col-lg-4 ">
+                  <h4>Contact Information</h4>
                   <p><span class="icon">&#9742;</span>+2917123456</p>
                   <p><span class="icon">&#9993;</span><a href="mailto:admin@eristars.com">admin@eristars.com</a></p>
                   <p><span class="icon">&#128204;</span>Harnet Avenue Asmara, Eritrea</p>
               </div>
-              <div class="form-fields">
+              <div class="form-fields col-10 col-lg-7">
                   <form action="/submit_form" method="POST">
-                      <div id="form">
-                  <div class ="Fname">
+                      <div class="row">
+                  <div class ="col-lg-5">
                       <label for="fname">First Name</label><br>
                       <input type="text" id="fname" name="fname"><br>
                       
                       <label for="email">Email</label><br>
                       <input type="email" id="email" name="email"><br>
                   </div>
-                  <div class="Lname">
+                  <div class="col-lg-5">
       
                       <label for="lname">Last Name</label><br>
                       <input type="text" id="lname" name="lname"><br>
@@ -151,15 +91,16 @@ display: flex ;
                       <input type="tel" id="phone" name="phone"><br>
                   </div>
               </div>
-        
-                  <div class="mess">
+        <div class="row">
+                  <div class="mess col-12">
                       <label for="message">Message</label><br>
                       <textarea id="message" name="message"></textarea><br>
                   </div>
               <button class="send-message">Send Message</button>         
-      
+            </div>
                   </form>
               </div>
+            </div>
           </div>
       </body>
 
@@ -167,7 +108,7 @@ display: flex ;
     </main>
 
     <footer>
-      <div class="container-fluid">
+      <div class="container-fluid mt-lg-5">
       <div class="row footer justify-content-between">
         <div class="footerlg col-3 mt-3 col-lg-3 ml-5 ">
           <img src="media/images/ProjectFinalLogo.png" alt="EriStars-logo" />
