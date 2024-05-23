@@ -125,14 +125,17 @@ height: 35px;
 }
 .body-btn:hover{
     background-color:#C4CEDA;
-}.mphoto{
+}
+.mphoto{
     box-shadow: 0 0 10px rgb(148, 138, 138);
     width: 100%;
+    padding: 0px;
 }
 /* contact */
 
 .contact-info {
     background-color:#C4CEDA;
+    border-radius: 8px;
    
 }
 .container {
@@ -145,7 +148,7 @@ height: 35px;
 }
 .mess{
     border: none;
-float: left;
+
 }
 
 .send-message{
