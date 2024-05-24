@@ -145,6 +145,12 @@ ul{
     border: none;
     border-bottom: 1px solid black;
 }
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
 .mess{
     border: none;
 
