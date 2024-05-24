@@ -161,7 +161,7 @@ form button{
     .card img{
         border-radius: 2%;
         height: 280px;
-        width: 307px;
+        width: 100%;
     }
     .container-c {
         width: 780px;
