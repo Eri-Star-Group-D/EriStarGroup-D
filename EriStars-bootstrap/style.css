@@ -33,7 +33,7 @@ img{
  }
  .card img{
      border-radius: 2%;
-     height: auto;
+     height: 280px;
      width: 100%;
  }
  .card a{ 
@@ -195,7 +195,8 @@ ul{
         height: 270px;
     }
     .contact-info {
-        height: 400px;
+        height: 393px;
+
     }
     .container {
             height: 400px;
