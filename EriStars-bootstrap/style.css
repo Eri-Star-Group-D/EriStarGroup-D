@@ -14,11 +14,44 @@ img{
     width: 100%;
     height: 60px;
 }
+.Login-btn{
+    border: 1px solid black;
+   border-radius: 25px;
+   height: 30px;
+   margin-right: -20rem;
+}
+footer{
+    background-color:#C4CEDA;
+}
+
+.icons{
+    border-top: 1px solid black;
+}
+ul{
+    list-style:none; 
+}
+
+/* Index page */
+
+.body-btn:hover{
+    background-color:#C4CEDA;
+}
+.body-btn{
+    border: none;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 0 25px rgb(148, 138, 138);
+    border-radius: 8px;
+}
+.num-viewers{
+    font-size: 30px;
+    font-weight: 300px;
+    color:rgb(243, 77, 77);
+}
 .card {
     padding: 2px;
-     width: 250px;
      height: 400px;
-      overflow: hidden; 
+     overflow: hidden; 
      background-color: rgba(239, 238, 237, 0.942);
      border-radius: 2%;
      border: 1.3px solid black;
@@ -28,12 +61,10 @@ img{
  .card img{
      border-radius: 2%;
      height: 280px;
-     width: 315px;
+     width: 336x;
  }
  .card a{
              padding: 6px 110px 6px;
-             text-decoration: none;
-             font-weight: 500;
              font-size: large;
              border: 1px solid black;
              border-radius: 25px;
@@ -52,35 +83,24 @@ img{
              color: rgb(246, 245, 244);
          }
 
+/* Search page */
 
-.Login-btn{
-    border: 1px solid black;
-   border-radius: 15px;
-   height: 30px;
-   margin-right: -20rem;
-}
 .register{
     border: none;
 }
-.num-viewers{
-    font-size: 30px;
-    font-weight: 300px;
-    color:rgb(243, 77, 77);
-}
 .search-bar{
-   
     width: 80vw;
     height: auto;
     border: none;
     box-shadow: 0 0 10px rgb(161, 159, 159);
-
-}.search-btn button{
+}
+.search-btn button{
     border: none;
     background-color:rgb(173, 128, 14);
     border-radius: 10px;
     font-size: 12px;
- width: 90px;
-height: 35px;
+    width: 90px;
+    height: 35px;
 }
 
 .search-btn button:hover{
@@ -88,32 +108,13 @@ height: 35px;
     background-color: rgb(87, 85, 85) ;
 }
 
-.box{
-    width: 200px;
-    height: 420px;
-    border: 1px solid rgb(181, 173, 173);
-    align-items: center;
-    gap: 20px;
-    padding: 1px;
-}
- .body-btn{
-    border: none;
-    width: 250px;
-    height: 150px;
-    margin-top: -30px;
 
-    box-shadow: 0 0 25px rgb(148, 138, 138);
-    border-radius: 8px;
-    
-  
-}
-.body-btn:hover{
-    background-color:#C4CEDA;
-}
+/* About page */
+
+
 .mphoto{
     box-shadow: 0 0 10px rgb(148, 138, 138);
-    width: 100%;
-    padding: 0px;
+  
 }
 /* contact */
 
@@ -134,28 +135,26 @@ height: 35px;
     border: none;
 
 }
-
-.send-message{
-
+#message{
+    border: none;
+    border-bottom: 1px solid black;
 }
-footer{
+form button{
+    border: none;
     background-color:#C4CEDA;
-   
+    width: 160px;
+    height: 35px;
 }
 
-.icons{
-
-    border-top: 1px solid black;
-}
-ul{
-    list-style:none; 
-   
-}
 @media screen and (min-width: 768px){
     .header-container{
         height: 80px;
     }
-
+    .card img{
+        border-radius: 2%;
+        height: 280px;
+        width: 307px;
+    }
     .Login-btn{
         height: 35px;
         width: 140px;
